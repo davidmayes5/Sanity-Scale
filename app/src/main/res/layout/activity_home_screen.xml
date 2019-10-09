@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EFEFEF"
+    android:clickable="false"
+    tools:context=".homeScreen">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="409dp"
+        android:layout_height="76dp"
+        android:background="#3492C3"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="1dp" />
+
+    <Button
+        android:id="@+id/weeklyAvgBtn"
+        android:layout_width="319dp"
+        android:layout_height="62dp"
+        android:background="#3492C3"
+        android:text="View Weekly Average"
+        android:textAllCaps="false"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="525dp" />
+
+    <Button
+        android:id="@+id/number"
+        android:layout_width="174dp"
+        android:layout_height="158dp"
+        android:background="#3491C1"
+        android:text="3"
+        android:textColor="#FFFFFF"
+        android:textSize="80sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="223dp" />
+
+    <Button
+        android:id="@+id/settingsBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="#B7B7B7"
+        android:text="@string/action_settings"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="293dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
