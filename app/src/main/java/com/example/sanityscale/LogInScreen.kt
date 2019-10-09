@@ -9,7 +9,7 @@ class LogInScreen : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_login)
+        setContentView(R.layout.activity_log_in_screen)
 
         configureBackButton()
         configureLogInButton()
@@ -26,7 +26,7 @@ class LogInScreen : AppCompatActivity() {
         });
     }
     fun configureLogInButton() {
-        val logInButton = findViewById(R.id.login) as Button;
+        val logInButton = findViewById(R.id.nextBtn) as Button;
         logInButton.setOnClickListener(object : android.view.View.OnClickListener {
 
             override fun onClick(p0: android.view.View) {

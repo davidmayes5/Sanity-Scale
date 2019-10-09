@@ -11,6 +11,7 @@ class GraphScreen : AppCompatActivity() {
         setContentView(R.layout.activity_graph_screen)
 
         configureSettingsButton()
+        configureBackButton()
     }
 
     fun configureSettingsButton() {
@@ -18,7 +19,17 @@ class GraphScreen : AppCompatActivity() {
         settingsButton.setOnClickListener(object : android.view.View.OnClickListener {
 
             override fun onClick(p0: android.view.View) {
-                val intent = android.content.Intent(this@GraphScreen, SettingsScreen::class.java)
+                val intent = android.content.Intent(this@GraphScreen, SettingsScreen2::class.java)
+                startActivity(intent);
+            }
+        });
+    }
+    fun configureBackButton() {
+        val backButton = findViewById(R.id.backBtn) as Button;
+        backButton.setOnClickListener(object : android.view.View.OnClickListener {
+
+            override fun onClick(p0: android.view.View) {
+                val intent = android.content.Intent(this@GraphScreen, homeScreen::class.java)
                 startActivity(intent);
             }
         });

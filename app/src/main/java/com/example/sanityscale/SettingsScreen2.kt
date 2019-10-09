@@ -4,12 +4,11 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 
-class SettingsScreen : AppCompatActivity() {
+class SettingsScreen2 : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_settings_screen)
-
+        setContentView(R.layout.activity_settings_screen2)
 
         configureBackButton()
     }
@@ -19,7 +18,7 @@ class SettingsScreen : AppCompatActivity() {
         backButton.setOnClickListener(object : android.view.View.OnClickListener {
 
             override fun onClick(p0: android.view.View) {
-                val intent = android.content.Intent(this@SettingsScreen, homeScreen::class.java)
+                val intent = android.content.Intent(this@SettingsScreen2, GraphScreen::class.java)
                 startActivity(intent);
             }
         });
